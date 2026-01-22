@@ -3,8 +3,8 @@ from mysql.connector import Error
 
 class Conexion:
     DATABASE = "zona_fit_db"
-    USERNAME = "root"
-    PASSWORD = "admin"
+    USERNAME = "tu_usuario"
+    PASSWORD = "tu_password"
     DB_PORT = "3306"
     HOST = "localhost"
     POOL_SIZE = 5
@@ -46,3 +46,4 @@ if __name__ == "__main__":
     print(conexion1)
     Conexion.liberar_conexion(conexion1)
     print(f"Se ha liberado el objeto conexion1")
+
