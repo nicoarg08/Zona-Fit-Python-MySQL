@@ -82,24 +82,3 @@ class ClienteDAO:
                 Conexion.liberar_conexion(conexion)
 
 
-
-
-if __name__ == "__main__":
-    # Insertar cliente
-    # cliente1 = Cliente(nombre="Alejandra",apellido="Leyes",membresia=300)
-    # clientes_insertados = CLienteDAO.insertar(cliente1)
-    # print(f"Cliente insertados: {clientes_insertados}")
-
-    # Actualizar cliente
-    # cliente_actualizar =Cliente(3,"Alexa","Tellez",400)
-    # clientes_actualizados = ClienteDAO.actualizar(cliente_actualizar)
-    # print(f"Clientes actualizados: {clientes_actualizados}")
-
-    # Eliminar cliente
-    cliente_eliminar = Cliente(id=3)
-    clientes_eliminados = ClienteDAO.eliminar(cliente_eliminar)
-    print(f"Cliente eliminados: {clientes_eliminados}")
-    # Seleccionar los clientes
-    clientes = ClienteDAO.seleccionar()
-    for cliente in clientes:
-        print(cliente)
